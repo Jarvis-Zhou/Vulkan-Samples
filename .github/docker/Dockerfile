@@ -24,7 +24,7 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN sed -i "s#ports.ubuntu.com#repo.huaweicloud.com#g" /etc/apt/source.list && apt-get update && apt-get install -y \
+RUN sed -i "s#ports.ubuntu.com#repo.huaweicloud.com#g" /etc/apt/sources.list && apt-get update && apt-get install -y \
         wget \
         alien \
         git \
